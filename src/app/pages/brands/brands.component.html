@@ -1,0 +1,22 @@
+<section class="py-4">
+   <h3 class="py-1 text-blue-400 m-2 inline-block ">allbrand</h3>
+
+    
+    
+
+       
+         <div class="parent grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+@for (brand of mybrand ; track brand._id ) {
+<a [routerLink]="['/details2', brand._id]" class="block">
+  <div class="cursor-pointer border p-2 shadow hover:shadow-lg transition">
+    <img [src]="brand.image" class="w-full h-[250px] object-cover" alt="" />
+    <h2 class="text-center text-green-500">{{ brand.name }}</h2>
+  </div>
+</a>
+
+}
+        </div> 
+</section>
+
+
+

@@ -1,0 +1,50 @@
+<section>
+
+
+
+
+<h3 class="bg-black text-blue-400 p-2 my-2 text-center">pouplar category</h3>
+<div class="flex flex-wrap gap-4 justify-center"  >
+ 
+
+    @for (cat of mycatg; track cat._id) {
+      
+      
+<div  class="w-100 bg-white shadow-md rounded overflow-hidden text-center">
+    <img class="w-100 object-fit-cover h-75" [src]="cat.image" alt="">
+
+
+
+
+<h3 class="bg-black text-white inline-block p-2 my-2">{{cat.name}}</h3>
+</div>
+
+
+    
+    }
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+<!-- <section>
+  <h3 class="bg-black text-blue-400 p-2 my-2 text-center">Popular Category</h3>
+
+ 
+  <div class="flex flex-wrap gap-4 justify-center">
+
+    @for (cat of mycatg; track cat._id) {
+      <div class="w-100 bg-white shadow-md rounded overflow-hidden text-center">
+        <img class="w-full  object-cover" [src]="cat.image" alt="">
+        <h3 class="bg-black text-white p-2">{{cat.name}}</h3>
+      </div>
+    }
+
+  </div>
+</section> -->

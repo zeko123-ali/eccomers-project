@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
+
+@source "../node_modules/flowbite";
+
+
+* {
+     font-family: "Bitcount Prop Double", system-ui;
+}
+
+/* @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default'; */
